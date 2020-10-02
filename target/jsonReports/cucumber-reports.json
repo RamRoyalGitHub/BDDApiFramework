@@ -1,0 +1,110 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-30T06:35:59.960Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5182000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.Hooks.name()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "verify if delete place api is working",
+        "description": "",
+        "id": "valifdation-for-place-api-s;verify-if-delete-place-api-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "delete Place payload",
+            "match": {
+              "location": "StepDefinition.StepDef.delete_place_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1895000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user calls \"deletePlaceApi\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deletePlaceApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.StepDef.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the api is success with status code 200",
+            "match": {
+              "location": "StepDefinition.StepDef.the_api_is_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.StepDef.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deltePlace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "valifdation for place Api\u0027s",
+    "description": "",
+    "id": "valifdation-for-place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/placeValidations.feature",
+    "tags": []
+  }
+]
